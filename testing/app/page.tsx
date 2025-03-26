@@ -4,7 +4,7 @@ export default function Home() {
       <div className="w-full max-w-2xl bg-white  rounded-md p-4 space-y-4">
         
         {/* Suggested Reply Box */}
-        <div className="bg-[#0062FF15] p-4 rounded-md relative">
+        <div className="bg-[#0062FF15] px-3 py-2 rounded-md relative">
           <div className="text-sm text-gray-800">
             <span className="text-[#1E1F24] font-medium text-[14px]">Vanilla AI</span>
             <span className="text-[#8B8D98] text-[12px] ml-1">Suggested</span>
@@ -21,12 +21,12 @@ export default function Home() {
             <img
               src="/images/loading.svg"
               alt="Loading"
-              className="w-4 h-4 mr-2"
+              className="w-[16px] h-[16px] mr-1"
             />
-            <span className="text-[#000107E1] text-[12px]">Regenerate</span>
+            <span className="text-[#000107E1] font-medium text-[12px]">Regenerate</span>
           </button>
         </div>
-        <div className="border  rounded-md bg-white shadow-sm px-4 py-2 w-full max-w-2xl">
+        <div className="border border-[#000B3618]  rounded-md bg-white shadow-sm px-4 py-2 w-full max-w-2xl">
       {/* Text input row */}
       <div>
         <input
@@ -62,7 +62,7 @@ export default function Home() {
           </button>
 
           {/* Vertical divider */}
-          <div className="border-l border-gray-300 h-5 mx-2"></div>
+          <div className="border-l border-[#000B3618] h-[20px] "></div>
 
           {/* Sparkle + “Quick reply with AI” */}
           <div className="flex items-center space-x-2">
@@ -74,7 +74,7 @@ export default function Home() {
         </div>
 
         {/* Send button */}
-        <button className="bg-[#00104010] text-white w-[32px] h-[32px] p-2 rounded hover:bg-blue-600 flex items-center">
+        <button className="bg-[#00104010] text-white w-[32px] h-[32px] p-2 rounded hover:bg-blue-600 flex items-center mr-10">
           <img src="/images/Vector.svg" alt="Send" className="w-[18px] h-[18px]" />
         </button>
       </div>

@@ -26,54 +26,61 @@ export default function Home() {
             <span className="text-[#000107E1] text-[12px]">Regenerate</span>
           </button>
         </div>
+        <div className="border  rounded-md bg-white shadow-sm px-4 py-2 w-full max-w-2xl">
+      {/* Text input row */}
+      <div>
+        <input
+          type="text"
+          placeholder="Typing |"
+          className="w-full outline-none border-none bg-transparent text-[14px] text-[#000107E1]"
+        />
+      </div>
 
-        {/* Message Input Box */}
-{/* Message Input Box */}
-<div className="border rounded-md flex items-center px-4 py-2 bg-white shadow-sm">
-  <input
-    type="text"
-    placeholder="Typing"
-    className="flex-1 outline-none border-none bg-transparent text-gray-700"
-  />
-  <div className="flex items-center space-x-4 ml-2">
-    {/* Attach/File icon */}
-    <button>
-      <img
-        src="/images/file.svg"
-        alt="Attach"
-        className="w-5 h-5"
-      />
-    </button>
+      {/* Icons, AI reply text, and Send button row */}
+      <div className="flex items-center justify-between mt-3">
+        <div className="flex items-center space-x-4">
+          {/* Example icons — update with any of your /images/*.svg */}
+          <button>
+            <img src="/images/note.svg" alt="Attach" className="w-[18px] h-[18px]" />
+          </button>
+          <button>
+            <img src="/images/sparkle1.svg" alt="Slash" className="w-[18px] h-[18px]" />
+          </button>
+          <button>
+            <img src="/images/file.svg" alt="Slash" className="w-[18px] h-[18px]" />
+          </button>
 
-    {/* Emoji icon */}
-    <button>
-      <img
-        src="/images/emoji.svg"
-        alt="Emoji"
-        className="w-5 h-5"
-      />
-    </button>
+          <button>
+            <img src="/images/emoji.svg" alt="Slash" className="w-[18px] h-[18px]" />
+          </button>
+          
+          <button>
+            <img src="/images/email.svg" alt="Emoji" className="w-[18px] h-[18px]" />
+          </button>
+          <button>
+            <img src="/images/slash.svg" alt="Note" className="w-[18px] h-[18px]" />
+          </button>
 
-    {/* Sparkle/Quick Reply icon */}
-    <button>
-      <img
-        src="/images/sparkle.svg"
-        alt="Quick Reply"
-        className="w-5 h-5"
-      />
-    </button>
+          {/* Vertical divider */}
+          <div className="border-l border-gray-300 h-5 mx-2"></div>
 
-    {/* Send button */}
-    <button className="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600 flex items-center justify-center">
-      <img
-        src="/images/Vector.svg"
-        alt="Send"
-        className="w-4 h-4"
-      />
-    </button>
-  </div>
-</div>
+          {/* Sparkle + “Quick reply with AI” */}
+          <div className="flex items-center space-x-2">
+            <img src="/images/sparkle.svg" alt="Sparkle" className="w-[16px] h-[16px]" />
+            <span className="text-[12px] text-[#000107E1]">
+              Quick reply with AI
+            </span>
+          </div>
+        </div>
 
+        {/* Send button */}
+        <button className="bg-[#00104010] text-white w-[32px] h-[32px] p-2 rounded hover:bg-blue-600 flex items-center">
+          <img src="/images/Vector.svg" alt="Send" className="w-[18px] h-[18px]" />
+        </button>
+      </div>
+    </div>
+
+    
 
       </div>
     </div>
